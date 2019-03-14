@@ -1,3 +1,10 @@
 
 #  Build the dockerfile
 docker build -t dockerapp:v0.1 .
+
+# build docker image for kubernetes
+$ docker build . -t mcclayac/pythonservice:v0.0.3
+
+# Push the image to dockerhub
+docker push mcclayac/pythonservice:v0.0.3
+
